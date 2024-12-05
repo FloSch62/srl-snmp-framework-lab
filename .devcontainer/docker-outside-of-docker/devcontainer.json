@@ -10,6 +10,10 @@
         "type=bind,src=/var/lib/docker,dst=/var/lib/docker",
         "type=bind,src=/lib/modules,dst=/lib/modules"
     ],
-    "workspaceFolder": "/workspace",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    "remoteEnv": {
+        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    },
+    "initializeCommand": ".devcontainer/convert-path.sh > /tmp/vars && source /tmp/vars",
+    "workspaceMount": "source=${env:WORKSPACE_MOUNT_SOURCE},target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace"
 }

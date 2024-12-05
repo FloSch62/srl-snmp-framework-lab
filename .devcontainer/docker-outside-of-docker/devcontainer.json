@@ -6,14 +6,10 @@
         "--privileged"
     ],
     "mounts": [
-        "type=bind,src=/run/docker/netns,dst=/run/docker/netns",
-        "type=bind,src=/var/lib/docker,dst=/var/lib/docker",
-        "type=bind,src=/lib/modules,dst=/lib/modules"
+        "type=bind,source=/run/docker/netns,target=/run/docker/netns",
+        "type=bind,source=/var/lib/docker,target=/var/lib/docker",
+        "type=bind,source=/lib/modules,target=/lib/modules"
     ],
     "workspaceFolder": "/workspace",
-    "workspaceMount": {
-        "source": "${localWorkspaceFolder}",
-        "target": "/workspace",
-        "type": "bind"
-    }
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
 }

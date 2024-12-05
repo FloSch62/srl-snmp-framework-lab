@@ -13,7 +13,7 @@
     "remoteEnv": {
         "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
     },
-    "initializeCommand": ".devcontainer/convert-path.sh > /tmp/vars && source /tmp/vars",
+    "initializeCommand": "bash .devcontainer/convert-path.sh > /tmp/vars && source /tmp/vars",
     "workspaceMount": "source=${env:WORKSPACE_MOUNT_SOURCE},target=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace"
 }

@@ -11,5 +11,5 @@
         "type=bind,source=/lib/modules,target=/lib/modules"
     ],
     "workspaceFolder": "/workspace",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind"
 }

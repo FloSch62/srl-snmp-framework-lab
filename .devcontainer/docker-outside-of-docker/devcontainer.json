@@ -11,5 +11,5 @@
         "type=bind,src=/lib/modules,dst=/lib/modules"
     ],
     "workspaceFolder": "/mnt/c/Users/Flo/.devpod/agent/contexts/default/workspaces/srl-snmp-framework-lab/",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/mnt/c/Users/Flo/.devpod/agent/contexts/default/workspaces/srl-snmp-framework-lab/,type=bind,consistency=cached"
+    "workspaceMount": "source=/mnt/c/Users/Flo/.devpod/agent/contexts/default/workspaces/srl-snmp-framework-lab/,target=/mnt/c/Users/Flo/.devpod/agent/contexts/default/workspaces/srl-snmp-framework-lab/,type=bind,consistency=cached"
    }

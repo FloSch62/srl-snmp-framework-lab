@@ -9,7 +9,5 @@
         "type=bind,source=/run/docker/netns,target=/run/docker/netns",
         "type=bind,source=/var/lib/docker,target=/var/lib/docker",
         "type=bind,source=/lib/modules,target=/lib/modules"
-    ],
-    "workspaceFolder": "/workspace",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ]
 }
